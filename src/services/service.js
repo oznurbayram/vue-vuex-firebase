@@ -1,7 +1,10 @@
-import firebase from "firebase";
+import * as firebase from "firebase";
 
 export default {
-  fetchUsers() {
-  return  firebase.database().ref('/users').once('value');
+  fetchColors() {
+    return firebase.database().ref("/colors").once("value");
+  },
+  fetchDrinks() {
+    return firebase.database().ref("/drinks").once("value");
   }
-}
+};
