@@ -10,7 +10,7 @@ export default {
   name: "Drink",
   props: {
     drink: {
-      type: Object
+      required: false
     }
   },
   computed: {

@@ -1,21 +1,28 @@
 <template>
   <div>
-    {{ color.category }}
+    {{ color.color }}
+    <section>
+      <ColorDetail :color="color"></ColorDetail>
+    </section>
   </div>
 </template>
 
 <script>
+import ColorDetail from "./ColorDetail";
+
 export default {
   name: "Color",
+  components: { ColorDetail },
   data() {
     return {};
   },
   methods() {},
   props: {
     color: {
-      type: Object,
       required: true
     }
   }
 };
 </script>
+
+<style></style>
