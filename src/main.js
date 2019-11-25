@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Vuex from "vuex";
 import * as firebase from "firebase";
+import VuexDropdown from "vuex-dropdown";
 
 import storeOptions from "./stores/store";
 import routerOptions from "./router/router";
@@ -22,6 +23,7 @@ firebase.initializeApp(config);
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.use(VuexDropdown);
 
 const router = new VueRouter(routerOptions);
 const store = new Vuex.Store(storeOptions);

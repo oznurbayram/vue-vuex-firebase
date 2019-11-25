@@ -16,7 +16,6 @@ export default {
   data() {
     return {};
   },
-  methods() {},
   props: {
     color: {
       required: true

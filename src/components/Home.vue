@@ -1,9 +1,9 @@
 <template>
   <div>
     <section>
-      <Loader v-if="loading" />
       <Header></Header>
       <section class="container py-5">
+        <Loader v-if="loading" />
         <router-link :to="{ path: goToColorList, params: { test: 'test' } }"
           >colors go to with path</router-link
         >
@@ -41,7 +41,6 @@ export default {
   },
   computed: {
     colors() {
-      debugger;
       return this.$store.getters.colors;
     },
     drinks() {

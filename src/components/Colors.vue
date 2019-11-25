@@ -1,12 +1,15 @@
 <template>
   <div>
-    <!-- <p v-for="color in colors">{{ color }}</p>-->
+  <Header></Header>
   </div>
 </template>
 
 <script>
+import Header from "./Header";
+
 export default {
   name: "Colors",
+  components: { Header },
   data() {
     return {};
   },
