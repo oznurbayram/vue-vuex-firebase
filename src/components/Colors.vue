@@ -8,8 +8,12 @@
 export default {
   name: "Colors",
   data() {
-    return { };
+    return {};
   },
-  props: ["params"]
+  props: {
+    test: {
+      required: false
+    }
+  }
 };
 </script>

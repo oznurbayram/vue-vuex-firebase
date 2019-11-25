@@ -14,6 +14,7 @@ export default {
     },
     {
       path: "/colors",
+      name: "colors",
       component: Colors
     }
   ],
