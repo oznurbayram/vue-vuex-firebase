@@ -24,13 +24,6 @@
         >
       </li>
       <li class="main-header-container__sub-menu">
-        <VuexDropdown
-          :onSelect="handleChangedropdown($event)"
-          :options="options"
-          :classNames="['wrapper']"
-        />
-      </li>
-      <li class="main-header-container__sub-menu">
         <router-link
           class="main-header-container__sub-menu__tab"
           :to="{ name: 'References' }"
@@ -53,25 +46,9 @@
 export default {
   name: "Header",
   data() {
-    return {
-      options: [
-        {
-          label: "makina1",
-          value: "makina1"
-        },
-        {
-          label: "makina2",
-          value: "makina2"
-        }
-      ],
-      selected: { label: "makina1", value: "makina1" }
-    };
+    return {};
   },
-  methods: {
-    handleChangedropdown() {
-      console.log("test");
-    }
-  }
+  methods: {}
 };
 </script>
 
@@ -81,6 +58,11 @@ export default {
   min-height: 80px;
   text-align: center;
   padding-top: 25px;
+  z-index: 500;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   &__sub-menu {
     cursor: pointer;

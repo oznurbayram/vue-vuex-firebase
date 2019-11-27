@@ -2,8 +2,10 @@
   <div>
     <section>
       <Header></Header>
+      <SliderHeader></SliderHeader>
       <section class="container py-5">
         <Loader v-if="loading" />
+
         <router-link :to="{ path: goToColorList, params: { test: 'test' } }"
           >colors go to with path</router-link
         >
@@ -15,6 +17,7 @@
         <Drink v-for="drink in this.drinks" :drink="drink" />
       </section>
     </section>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -23,10 +26,12 @@ import Loader from "./Loader.vue";
 import Color from "./Color";
 import Drink from "./Drink";
 import Header from "./Header";
+import SliderHeader from "./SliderHeader";
+import Footer from "./Footer";
 
 export default {
   name: "Home",
-  components: { Loader, Color, Drink, Header },
+  components: { Loader, Color, Drink, Header, SliderHeader, Footer },
   data() {
     return {
       loading: true
