@@ -6,5 +6,6 @@ export default {
   },
   fetchDrinks() {
     return firebase.database().ref("/drinks").once("value");
-  }
+  },
+
 };

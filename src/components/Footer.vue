@@ -8,7 +8,7 @@
         <!-- Grid column -->
         <div class="col-md-6 mt-md-0 mt-3">
           <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
+          <h5 class="text-uppercase">ULUTAS MAKİNA</h5>
           <p>
             Here you can use rows and columns to organize your footer content.
           </p>
@@ -60,7 +60,7 @@
 
 <style>
 .footer-main-container {
-  background-color: #111;
+  background-color: #e3e9ed;
 }
 .image-size {
   width: 25px;

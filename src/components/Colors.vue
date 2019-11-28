@@ -1,6 +1,7 @@
 <template>
   <div>
-  <Header></Header>
+    <Header></Header>
+    {{ $route.params.test }}
   </div>
 </template>
 
@@ -12,11 +13,6 @@ export default {
   components: { Header },
   data() {
     return {};
-  },
-  props: {
-    test: {
-      required: false
-    }
   }
 };
 </script>

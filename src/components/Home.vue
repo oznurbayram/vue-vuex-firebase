@@ -1,12 +1,11 @@
 <template>
-  <div>
+  <div class="home">
+    <Header></Header>
+    <SliderHeader></SliderHeader>
     <section>
-      <Header></Header>
-      <SliderHeader></SliderHeader>
-      <section class="container py-5">
-        <Loader v-if="loading" />
+      <Loader v-if="loading" />
 
-        <router-link :to="{ path: goToColorList, params: { test: 'test' } }"
+      <!-- <router-link :to="{ path: goToColorList, params: { test: 'test' } }"
           >colors go to with path</router-link
         >
         <router-link :to="{ name: 'colors', params: { test: 'test' } }"
@@ -14,8 +13,7 @@
         >
         <Color v-for="color in this.colors" :color="color" />
         <h1 v-for="category in this.colorsCategory">{{ category.color }}</h1>
-        <Drink v-for="drink in this.drinks" :drink="drink" />
-      </section>
+        <Drink v-for="drink in this.drinks" :drink="drink" />-->
     </section>
     <Footer></Footer>
   </div>
@@ -60,3 +58,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.home {
+  width: 100%;
+}
+</style>
