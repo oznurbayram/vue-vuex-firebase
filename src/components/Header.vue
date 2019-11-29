@@ -76,7 +76,7 @@ export default {
   }
   &__bottom-header {
     background-color: #5f7d95;
-    height: 80px;
+    height: 85px;
     text-align: center;
     padding-top: 25px;
 

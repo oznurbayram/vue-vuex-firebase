@@ -2,6 +2,7 @@
   <div class="home">
     <Header></Header>
     <SliderHeader></SliderHeader>
+    <Content></Content>
     <section>
       <Loader v-if="loading" />
 
@@ -26,10 +27,11 @@ import Drink from "./Drink";
 import Header from "./Header";
 import SliderHeader from "./SliderHeader";
 import Footer from "./Footer";
+import Content from "./Content";
 
 export default {
   name: "Home",
-  components: { Loader, Color, Drink, Header, SliderHeader, Footer },
+  components: { Loader, Color, Drink, Header, SliderHeader, Footer, Content },
   data() {
     return {
       loading: true
